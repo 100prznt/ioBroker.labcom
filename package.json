@@ -1,0 +1,58 @@
+{
+  "name": "iobroker.labcom",
+  "version": "0.0.1",
+  "description": "LabCom API Adapter",
+  "author": {
+    "name": "LemonShock",
+    "email": "dev.lemonshock@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ioBroker",
+    "api",
+    "pool",
+    "water",
+    "measurements",
+    "import"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "#"
+  },
+  "dependencies": {
+    "@iobroker/adapter-core": "^2.4.0",
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "@iobroker/testing": "^2.2.0",
+    "@types/chai": "^4.2.11",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/gulp": "^4.0.6",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^14.0.6",
+    "@types/proxyquire": "^1.3.28",
+    "@types/sinon": "^9.0.4",
+    "@types/sinon-chai": "^3.2.4",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^7.1.0",
+    "gulp": "^4.0.2",
+    "mocha": "^7.2.0",
+    "proxyquire": "^2.1.3",
+    "sinon": "^9.0.2",
+    "sinon-chai": "^3.5.0"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test:js": "mocha --opts test/mocha.custom.opts",
+    "test:package": "mocha test/package --exit",
+    "test:unit": "mocha test/unit --exit",
+    "test:integration": "mocha test/integration --exit",
+    "test": "npm run test:js && npm run test:package",
+    "lint": "eslint"
+  },
+  "bugs": {
+    "url": "#"
+  },
+  "readmeFilename": "README.md"
+}
