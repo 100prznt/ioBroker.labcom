@@ -56,8 +56,8 @@ const getData = async (endpoint, token, accountFilter) => {
 
 		var accounts = res.data['data']['CloudAccount']['Accounts'];
 		accounts.forEach(account => { 
-			let forename = account['forename'];
-			let surname = account['surname'];
+			let forename = account['forename'].replace(/-/g, '_');
+			let surname = account['surname'].replace(/-/g, '_');
 			
 			adapter.setObjectNotExists(`accounts`, {
 				type: 'channel',
