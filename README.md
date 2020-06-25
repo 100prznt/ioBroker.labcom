@@ -11,7 +11,7 @@ This adapter fetches your latest measurements from labcom.cloud
 * Install this adapter to ioBroker
 * Create an instance of this adapter
 * Enter your LabCom API token, which can be created on https://labcom.cloud/settings
-* Define which accounts should be monitiored in ioBroker (either enter "0" for all accounts, or enter the desired account IDs comma separated)
+* Define which accounts should be monitored in ioBroker (either enter "0" for all accounts, or enter the desired account IDs comma separated)
 * The adapter is preconfigured to fetch the latest data every minute, this can be changed in the instance overview
 
 ## License
