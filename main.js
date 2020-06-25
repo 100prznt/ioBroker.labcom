@@ -167,6 +167,7 @@ const getData = async (endpoint, token, accountFilter) => {
 	}  
 	catch (error) {
 		adapter.log.error(error);
+		adapter.stop();
 	}
 }
 
