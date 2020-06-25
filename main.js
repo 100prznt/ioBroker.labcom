@@ -196,7 +196,12 @@ adapter.on('ready', function () {
 	}
 	
 	adapter.log.info('LabCom adapter - fetching data ...');
-	getData(endpoint, token, accountFilter);
+	if(token && accountIds){
+		getData(endpoint, token, accountFilter);
+	} else {
+		adapter.log.error('LabCom adapter - config incomplete!');
+		adapter.stop();
+	}
 });
 
 
