@@ -1,8 +1,8 @@
 ![Logo](admin/logo.png)
 # ioBroker.labcom
 
-### 0.0.1
-* (LemonShock) initial release
+### 0.0.2
+* (LemonShock) fixed incomplete config
 
 ### Description
 This adapter fetches your latest measurements from labcom.cloud
