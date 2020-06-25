@@ -75,12 +75,12 @@ const getData = async (endpoint, token, accountFilter) => {
 					name: 'Account Name',
 					role: 'value',
 					type: 'string',
-					value: forename + ' ' + surname,
+					value: account['forename'] + ' ' + account['surname'],
 					read: true,
 					write: false
 				}
 			});
-			adapter.setState(`accounts.${forename}_${surname}`, forename + ' ' + surname, true);
+			adapter.setState(`accounts.${forename}_${surname}`, account['forename'] + ' ' + account['surname'], true);
 			
 			// pre-sort by measurement date-time desc
 			var measurements = account['Measurements'];
