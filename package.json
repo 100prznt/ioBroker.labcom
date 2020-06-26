@@ -1,7 +1,7 @@
 {
   "name": "iobroker.labcom",
-  "version": "0.0.2",
-  "description": "LabCom API Adapter",
+  "version": "0.0.3",
+  "description": "LabCom API",
   "author": {
     "name": "LemonShock",
     "email": "dev.lemonshock@gmail.com"

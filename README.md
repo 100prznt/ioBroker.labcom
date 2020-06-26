@@ -1,8 +1,8 @@
 ![Logo](admin/logo.png)
 # ioBroker.labcom
 
-### 0.0.2
-* (LemonShock) fixed incomplete config
+### 0.0.3
+* (LemonShock) added translations, restructured data points
 
 ### Description
 This adapter fetches your latest measurements from labcom.cloud
@@ -13,6 +13,11 @@ This adapter fetches your latest measurements from labcom.cloud
 * Enter your LabCom API token, which can be created on https://labcom.cloud/settings
 * Define which accounts should be monitored in ioBroker (either enter "0" for all accounts, or enter the desired account IDs comma separated)
 * The adapter is preconfigured to fetch the latest data every minute, this can be changed in the instance overview
+
+## Changelog
+* 0.0.1 Inital release
+* 0.0.2 incomplete config patch
+* 0.0.3 added translations, restructured data points
 
 ## License
 MIT License

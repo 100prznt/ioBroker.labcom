@@ -1,21 +1,69 @@
 {
     "common": {
         "name": "labcom",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "news": {
-            "0.0.2": {
-                "en": "incomplete cofig fixed",
-                "de": "unvollständige Konfiguration behoben"
+	    "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            },
+	    "0.0.2": {
+                "en": "incomplete config fixed",
+                "de": "unvollständige Konfiguration behoben",
+		"ru": "исправлена ​​неполная конфигурация",
+        	"pt": "configuração incompleta corrigida",
+	        "nl": "onvolledige configuratie opgelost",
+	        "fr": "configuration incomplète corrigée",
+	        "it": "configurazione incompleta risolta",
+	        "es": "configuración incompleta arreglada",
+	        "pl": "naprawiono niepełną konfigurację",
+	        "zh-cn": "修复不完整的配置"
+            },
+            "0.0.3": {
+                "en": "added translations, restructured data points",
+                "de": "Übersetzungen hinzugefügt, Datenpunkte umstrukturiert",
+		"ru": "добавлены переводы, реструктурированные точки данных",
+        	"pt": "traduções adicionadas, pontos de dados reestruturados",
+	        "nl": "vertalingen toegevoegd, geherstructureerde gegevenspunten",
+	        "fr": "traductions ajoutées, points de données restructurés",
+	        "it": "traduzioni aggiunte, punti dati ristrutturati",
+	        "es": "traducciones agregadas, puntos de datos reestructurados",
+	        "pl": "dodane tłumaczenia, zrestrukturyzowane punkty danych",
+	        "zh-cn": "添加翻译，重组数据点"
             }
         },
-        "title": "LabCom API Adapter",
+        "title": "LabCom API",
         "titleLang": {
-            "en": "LabCom API Adapter",
-            "de": "LabCom API Adapter"
+            "en": "LabCom API",
+            "de": "LabCom API",
+	    "ru": "LabCom API",
+            "pt": "LabCom API",
+	    "nl": "LabCom API",
+	    "fr": "LabCom API",
+	    "it": "LabCom API",
+	    "es": "LabCom API",
+	    "pl": "LabCom API",
+	    "zh-cn": "LabCom API"
         },
         "desc": {
             "en": "Fetches your latest measurements from labcom.cloud",
-            "de": "Holt deine aktuellen Messungen von labcom.cloud"
+            "de": "Ruft Ihre neuesten Messungen von labcom.cloud ab",
+	    "ru": "Получает ваши последние измерения из labcom.cloud",
+       	    "pt": "Busca suas últimas medições em labcom.cloud",
+	    "nl": "Haalt uw laatste metingen op van labcom.cloud",
+	    "fr": "Récupère vos dernières mesures sur labcom.cloud",
+	    "it": "Recupera le tue ultime misurazioni da labcom.cloud",
+	    "es": "Obtiene sus últimas mediciones de labcom.cloud",
+	    "pl": "Pobiera najnowsze pomiary z labcom.cloud",
+	    "zh-cn": "从labcom.cloud获取最新测量结果"
         },
         "authors": [
             "LemonShock <dev.lemonshock@gmail.com>"
@@ -33,6 +81,7 @@
         "main": "main.js",
         "icon": "logo.png",
         "enabled": true,
+	"extIcon": "https://github.com/LemonShock/ioBroker.labcom/blob/master/admin/logo.png",
         "loglevel": "info",
         "restartAdapters": [
             "labcom"

@@ -115,10 +115,10 @@ const getData = async (endpoint, token, accountFilter) => {
 					});
 					
 					// set measurement
-					adapter.setObjectNotExists(`accounts.${forename}_${surname}.parameter.${parameter}.latestMeasurement`, {
+					adapter.setObjectNotExists(`accounts.${forename}_${surname}.parameter.${parameter}.measurement`, {
 						type: 'state',
 						common: {
-							name: 'Latest Measurement',
+							name: measurement['parameter'],
 							role: 'value',
 							type: 'string',
 							value: measurementValue+' '+unit,
@@ -126,35 +126,35 @@ const getData = async (endpoint, token, accountFilter) => {
 							write: false
 						}
 					});
-					adapter.setState(`accounts.${forename}_${surname}.parameter.${parameter}.latestMeasurement`, measurementValue+' '+unit, true);
+					adapter.setState(`accounts.${forename}_${surname}.parameter.${parameter}.measurement`, measurementValue+' '+unit, true);
 
 					// set scenario
-					adapter.setObjectNotExists(`accounts.${forename}_${surname}.parameter.${parameter}.latestMeasurement.scenario`, {
+					adapter.setObjectNotExists(`accounts.${forename}_${surname}.parameter.${parameter}.scenario`, {
 						type: 'state',
 						common: {
-							name: 'Scenario',
+							name: measurement['scenario'],
 							role: 'value',
 							type: 'string',
-							value: scenario,
+							value: measurement['scenario'],
 							read: true,
 							write: false
 						}
 					});
-					adapter.setState(`accounts.${forename}_${surname}.parameter.${parameter}.latestMeasurement.parameter`, parameter, true);
+					adapter.setState(`accounts.${forename}_${surname}.parameter.${parameter}.scenario`, measurement['scenario'], true);
 
 					
 					// set timestamp
-					adapter.setObjectNotExists(`accounts.${forename}_${surname}.parameter.${parameter}.latestMeasurement.timestamp`, {
+					adapter.setObjectNotExists(`accounts.${forename}_${surname}.parameter.${parameter}.timestamp`, {
 						type: 'state',
 						common: {
-							name: 'Timestamp',
+							name: 'Timestamp of ' + measurement['parameter'],
 							role: 'indicator.timestamp',
 							type: 'number',
 							read: true,
 							write: false
 						}
 					});
-					adapter.setState(`accounts.${forename}_${surname}.parameter.${parameter}.latestMeasurement.timestamp`, userDate, true);
+					adapter.setState(`accounts.${forename}_${surname}.parameter.${parameter}.timestamp`, userDate, true);
 					
 					// add parameter to already imported parameter
 					addedParameter[parameter] = true;
