@@ -86,7 +86,6 @@
     "restartAdapters": [
         "labcom"
     ],
-    //"localLink": "%web_protocol%://%ip%:%web_port%/labcom/edit.html",
     "mode": "schedule",
     "schedule": "*/1 * * * *",
     "type": "misc-data",
