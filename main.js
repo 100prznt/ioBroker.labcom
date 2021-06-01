@@ -122,7 +122,7 @@ const getData = async (endpoint, token, accountFilter) => {
 							role: 'value',
 							type: 'number',
 							value: measurementValue,
-							unit: unit
+							unit: unit,
 							read: true,
 							write: false
 						}
