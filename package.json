@@ -1,10 +1,10 @@
 {
   "name": "iobroker.labcom",
-  "version": "0.0.3",
+  "version": "0.1.1",
   "description": "LabCom API",
   "author": {
-    "name": "LemonShock",
-    "email": "dev.lemonshock@gmail.com"
+    "name": "Elias Ruemmler",
+    "email": "pool@100prznt.de"
   },
   "license": "MIT",
   "keywords": [

@@ -120,15 +120,13 @@ const getData = async (endpoint, token, accountFilter) => {
 						common: {
 							name: measurement['parameter'],
 							role: 'value',
-							//type: 'string',
 							type: 'number',
-							//value: measurementValue+' '+unit,
 							value: measurementValue,
+							unit: unit
 							read: true,
 							write: false
 						}
 					});
-					//adapter.setState(`accounts.${forename}_${surname}.parameter.${parameter}.measurement`, measurementValue+' '+unit, true);
 					adapter.setState(`accounts.${forename}_${surname}.parameter.${parameter}.measurement`, measurementValue, true);
 
 					// set scenario
