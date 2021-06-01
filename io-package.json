@@ -81,7 +81,7 @@
     "main": "main.js",
     "icon": "logo.png",
     "enabled": true,
-    "extIcon": "https://github.com/LemonShock/ioBroker.labcom/blob/master/admin/logo.png",
+    "extIcon": "https://github.com/100prznt/ioBroker.labcom/blob/master/admin/logo.png",
     "loglevel": "info",
     "restartAdapters": [
         "labcom"
