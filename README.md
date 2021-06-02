@@ -1,8 +1,8 @@
 ![Logo](admin/logo.png)
 # ioBroker.labcom
 
-### 0.0.3
-* (LemonShock) added translations, restructured data points
+### 0.1.1
+* change of the state datatype to __number__
 
 ### Description
 This adapter fetches your latest measurements from labcom.cloud
@@ -15,9 +15,10 @@ This adapter fetches your latest measurements from labcom.cloud
 * The adapter is preconfigured to fetch the latest data every minute, this can be changed in the instance overview
 
 ## Changelog
-* 0.0.1 Inital release
-* 0.0.2 incomplete config patch
-* 0.0.3 added translations, restructured data points
+* 0.0.1 Inital release (LemonShock)
+* 0.0.2 incomplete config patch (LemonShock)
+* 0.0.3 added translations, restructured data points (LemonShock)
+* 0.1.1 forked from 0.0.1 (LemonShock), change of the state datatype to __number__
 
 ## License
 MIT License
