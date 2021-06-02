@@ -27,7 +27,7 @@ Found this project on the [ioBroker Community](https://forum.iobroker.net/).
 ## Credits
 This app is made possible by contributions from:
 * [@LemonShock](https://github.com/LemonShock) - core contributor [LemonShock/ioBroker.labcom](https://github.com/LemonShock/ioBroker.labcom)
-* [Elias Rümmler](http://www.100prznt.de) ([@rmmlr](https://github.com/100prznt))
+* [Elias Rümmler](http://www.100prznt.de) ([@100prznt](https://github.com/100prznt))
 
 ## License
 The ioBroker.labcom Adapter is licensed under [MIT](http://www.opensource.org/licenses/mit-license.php "Read more about the MIT license form"). Refer to [LICENSE](https://github.com/100prznt/ioBroker.labcom/blob/master/LICENSE) for more information.
