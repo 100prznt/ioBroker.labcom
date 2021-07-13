@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "labcom",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "news": {
 	    "0.0.1": {
                 "en": "initial release",
@@ -38,6 +38,10 @@
 	        "es": "traducciones agregadas, puntos de datos reestructurados",
 	        "pl": "dodane tłumaczenia, zrestrukturyzowane punkty danych",
 	        "zh-cn": "添加翻译，重组数据点"
+            },
+            "0.0.4": {
+                "en": "provide meas values as number and set the unit property",
+                "de": "Messwerte werden als Zahl bereit gestellt und das Einheitenfeld entsprechend gesetzt"
             }
         },
         "title": "LabCom API",
@@ -86,7 +90,7 @@
         "restartAdapters": [
             "labcom"
         ],
-        "localLink": "%web_protocol%://%ip%:%web_port%/labcom/edit.html",
+        //"localLink": "%web_protocol%://%ip%:%web_port%/labcom/edit.html", //dont work
         "mode": "schedule",
         "schedule": "*/1 * * * *",
         "type": "misc-data",

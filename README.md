@@ -1,8 +1,8 @@
 ![Logo](admin/logo.png)
 # ioBroker.labcom
 
-### 0.0.3
-* (LemonShock) added translations, restructured data points
+### 0.0.4
+* (@100prznt) provide meas values as number and set the unit property
 
 ### Description
 This adapter fetches your latest measurements from labcom.cloud
@@ -18,6 +18,7 @@ This adapter fetches your latest measurements from labcom.cloud
 * 0.0.1 Inital release
 * 0.0.2 incomplete config patch
 * 0.0.3 added translations, restructured data points
+* 0.0.4 provide meas values as number and set the unit property
 
 ## License
 MIT License
