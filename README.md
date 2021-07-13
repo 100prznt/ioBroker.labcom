@@ -2,7 +2,7 @@
 # ioBroker.labcom
 
 ### 0.0.4
-* (@100prznt) provide meas values as number and set the unit property
+* provide meas values as number and set the unit property, by @100prznt
 
 ### Description
 This adapter fetches your latest measurements from labcom.cloud
