@@ -22,12 +22,11 @@
 			"Elias Ruemmler <pool@100prznt.de>"
 		],
 		"keywords": [
-			"ioBroker",
 			"api",
 			"pool",
 			"water",
 			"measurements",
-			"import"
+			"poollab"
 		],
 		"license": "MIT",
 		"platform": "Javascript/Node.js",
