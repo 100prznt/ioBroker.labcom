@@ -34,3 +34,6 @@ The ioBroker.labcom Adapter is licensed under [MIT](http://www.opensource.org/li
 
 ## Contributions
 Contributions are welcome. Fork this repository and send a pull request if you have something useful to add.
+
+
+Copyright (c) 2022 Elias Ruemmler <pool@100prznt.de>
