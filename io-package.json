@@ -7,9 +7,9 @@
             "en": "initial release, forked from LemonShock, measurement values stored as number",
             "de": "Erstveröffentlichung, forked von LemonShock, Messwerte werden als Zahl abgelegt"
         },
-        "connectionType": "cloud"
+        "connectionType": "cloud",
+        "dataSource": "poll"
     },
-    "dataSource": "poll",
     "title": "LabCom API",
     "titleLang": {
         "en": "LabCom API",
