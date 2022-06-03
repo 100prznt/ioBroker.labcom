@@ -43,7 +43,12 @@
     "schedule": "*/1 * * * *",
     "type": "misc-data",
     "compact": true,
-    "materialize": true
+    "materialize": true,
+    "dependencies": [
+        {
+            "js-controller": ">=3.3.0"
+        }
+    ],
 },
 "native": {
     "labcomApiToken": "",
