@@ -1,27 +1,14 @@
 $ iobroker url https://github.com/100prznt/ioBroker.labcom --host ioBroker-sandbox --debug
-
-install 100prznt/ioBroker.labcom#b6dc2782e6748c0c1d677e1d0a5a4c1fe1e68127
-
+install 100prznt/ioBroker.labcom#90dbf592d6a2ed1bfb31fbfd8f8eb96c96994081
 NPM version: 6.14.17
-
-Installing 100prznt/ioBroker.labcom#b6dc2782e6748c0c1d677e1d0a5a4c1fe1e68127... (System call)
-
-npm WARN deprecated axios@0.19.2: Critical security vulnerability fixed in v0.21.1. For more information, see https://github.com/axios/axios/pull/3410
-
+Installing 100prznt/ioBroker.labcom#90dbf592d6a2ed1bfb31fbfd8f8eb96c96994081... (System call)
 npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules/fsevents):
-
-npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})+ iobroker.labcom@0.1.1added 4 packages from 8 contributors in 268.179s
-
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
++ iobroker.labcom@0.1.1added 2 packages from 2 contributors in 267.5s
 38 packages are looking for funding run `npm fund` for details
-
 upload [4] labcom.admin /opt/iobroker/node_modules/iobroker.labcom/admin/admin.d.ts admin.d.ts video/mp2t
-
 upload [3] labcom.admin /opt/iobroker/node_modules/iobroker.labcom/admin/index_m.html index_m.html text/html
-
 upload [2] labcom.admin /opt/iobroker/node_modules/iobroker.labcom/admin/logo.png logo.png image/png
-
 upload [1] labcom.admin /opt/iobroker/node_modules/iobroker.labcom/admin/style.css style.css text/css
-
 upload [0] labcom.admin /opt/iobroker/node_modules/iobroker.labcom/admin/words.js words.js application/javascript
-
 Process exited with code 0
