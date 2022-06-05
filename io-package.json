@@ -1,54 +1,60 @@
 {
-    "common": {
-        "name": "labcom",
-        "version": "0.1.1",
-        "news": {
-           "0.1.1": {
-            "en": "initial release, forked from LemonShock, measurement values stored as number",
-            "de": "Erstveröffentlichung, forked von LemonShock, Messwerte werden als Zahl abgelegt"
-        }
-    },
-    "title": "LabCom API",
-    "titleLang": {
-        "en": "LabCom API",
-        "de": "LabCom API"
-    },
-    "desc": {
-        "en": "Fetches your latest measurements from labcom.cloud",
-        "de": "Ruft Ihre neuesten Messungen von labcom.cloud ab"
-    },
-    "authors": [
-        "LemonShock <dev.lemonshock@gmail.com>",
-        "Elias Ruemmler <pool@100prznt.de>"
-    ],
-    "keywords": [
-        "ioBroker",
-        "api",
-        "pool",
-        "water",
-        "measurements",
-        "import"
-    ],
-    "license": "MIT",
-    "platform": "Javascript/Node.js",
-    "main": "main.js",
-    "icon": "logo.png",
-    "enabled": true,
-    "extIcon": "https://github.com/100prznt/ioBroker.labcom/blob/master/admin/logo.png",
-    "loglevel": "info",
-    "restartAdapters": [
-        "labcom"
-    ],
-    "mode": "schedule",
-    "schedule": "*/1 * * * *",
-    "type": "misc-data",
-    "compact": true,
-    "materialize": true
-},
-"native": {
-    "labcomApiToken": "",
-    "labcomAccountIds": "0"
-},
-"objects": [],
-"instanceObjects": []
+	"common": {
+		"name": "labcom",
+		"version": "0.1.1",
+		"news": {
+			"0.1.1": {
+				"en": "initial release, forked from LemonShock, measurement values stored as number",
+				"de": "Erstveröffentlichung, forked von LemonShock, Messwerte werden als Zahl abgelegt"
+			}
+		},
+		"title": "LabCom API",
+		"titleLang": {
+			"en": "LabCom API",
+			"de": "LabCom API"
+		},
+		"desc": {
+			"en": "Fetches your latest measurements from labcom.cloud",
+			"de": "Ruft Ihre neuesten Messungen von labcom.cloud ab"
+		},
+		"authors": [
+			"LemonShock <dev.lemonshock@gmail.com>",
+			"Elias Ruemmler <pool@100prznt.de>"
+		],
+		"keywords": [
+			"api",
+			"pool",
+			"water",
+			"measurements",
+			"poollab"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "logo.png",
+		"enabled": true,
+		"extIcon": "https://github.com/100prznt/ioBroker.labcom/blob/master/admin/logo.png",
+		"loglevel": "info",
+		"restartAdapters": [
+			"labcom"
+		],
+		"mode": "schedule",
+		"schedule": "*/1 * * * *",
+		"type": "misc-data",
+		"compact": true,
+		"materialize": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"dependencies": [
+			{
+				"js-controller": ">=2.0.0"
+			}
+		]
+	},
+	"native": {
+		"labcomApiToken": "",
+		"labcomAccountIds": "0"
+	},
+	"objects": [],
+	"instanceObjects": []
 }
