@@ -16,6 +16,7 @@ const axios = require('axios');
 // function for fetching data
 const getData = async (endpoint, token, accountFilter) => {
 	try {
+		adapter.log.info('LabCom adapter - Token: ' + token);
 		var res = await axios({
 			method: 'post',
 			url: endpoint,
@@ -187,7 +188,8 @@ adapter.on('unload', function (callback) {
 adapter.on('ready', function () {
 	adapter.log.info('LabCom adapter - started');
 
-	const endpoint = "https://labcom.cloud/graphql";
+	//const endpoint = "https://labcom.cloud/graphql";
+	const endpoint = "https://backend.labcom.cloud/graphiql";
 	const token = adapter.config.labcomApiToken;
 	const accountIds = adapter.config.labcomAccountIds;
 	
