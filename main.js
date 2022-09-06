@@ -188,8 +188,10 @@ adapter.on('unload', function (callback) {
 adapter.on('ready', function () {
 	adapter.log.info('LabCom adapter - started');
 
-	const endpoint = "https://labcom.cloud/graphql";
+	//const endpoint = "https://labcom.cloud/graphql";
+	//const endpoint = "https://labcom.cloud/graphiql";
 	//const endpoint = "https://backend.labcom.cloud/graphiql";
+	const endpoint = "https://backend.labcom.cloud/graphql";
 	const token = adapter.config.labcomApiToken;
 	const accountIds = adapter.config.labcomAccountIds;
 	
