@@ -1,8 +1,9 @@
 ![Logo](admin/logo.png)
 # ioBroker.labcom
 
-### 0.1.1
-* change of the state datatype to __number__
+### 0.1.3
+* update LabCom Cloud endpoint URL
+* __NOTE__ You need to update your LabCom Cloud token!
 
 ### Description
 This adapter fetches your latest measurements from labcom.cloud
@@ -19,6 +20,8 @@ This adapter fetches your latest measurements from labcom.cloud
 * 0.0.2 incomplete config patch (LemonShock)
 * 0.0.3 added translations, restructured data points (LemonShock)
 * 0.1.1 forked from 0.0.1 (LemonShock), change of the state datatype to __number__
+* 0.1.2 update libraries
+* 0.1.3 update LabCom Cloud endpoint URL
 
 ## Community
 Found this project on the [ioBroker Community](https://forum.iobroker.net/).
