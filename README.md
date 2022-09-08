@@ -9,6 +9,8 @@
 ## Description
 This adapter fetches your latest measurements from labcom.cloud
 
+![Screenshot Labcom object tree](docu/Screenshot_Objects.png)
+
 ## Usage
 * Install this adapter to ioBroker (Expert mode -> install from url)
 * Create an instance of this adapter
