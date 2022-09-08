@@ -6,10 +6,10 @@
 * Measurement values are converted explicit to number, OR and UR measurements get NaN as value and __new status state__ (Overrange, Underrange, OK)
 
 
-### Description
+## Description
 This adapter fetches your latest measurements from labcom.cloud
 
-### Usage
+## Usage
 * Install this adapter to ioBroker (Expert mode -> install from url)
 * Create an instance of this adapter
 * Enter your LabCom API token, which can be created on https://labcom.cloud/pages/user-setting
@@ -44,4 +44,4 @@ Contributions are welcome. Fork this repository and send a pull request if you h
 
 -----------
 
-Copyright (c) 2022 Elias Ruemmler <pool@100prznt.de>
+Copyright &copy; 2022 Elias Ruemmler <pool@100prznt.de>
