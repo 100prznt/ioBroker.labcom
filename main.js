@@ -98,7 +98,7 @@ const getData = async (endpoint, token, accountFilter) => {
 			});
 			
 			measurements.forEach(measurement => { 
-				let userDate = new Date(measurement['timestamp'] * 1000);//.toLocaleString(); //ER 2022/09/08
+				let userDate = new Date(measurement['timestamp'] * 1000).toLocaleString(); //ER 2022/09/08
 				let parameter = measurement['parameter'] ? measurement['parameter'].replace(/-/g, '_').replace(/ /g,"_") : "Unknown";
 				let scenario = measurement['scenario'] ? measurement['scenario'].replace(/-/g, '_') : "Unknown";
 				//let measurementValue = measurement['value']; //ER 2022/09/08
@@ -116,6 +116,8 @@ const getData = async (endpoint, token, accountFilter) => {
 						case 'UR':
 							measurementStatus = 'Underrange';
 							break;
+						default:
+							measurementStatus = measurement['value'];
 					}
 				} else {
 					measurementStatus = 'OK';
@@ -167,9 +169,9 @@ const getData = async (endpoint, token, accountFilter) => {
 						type: 'state',
 						common: {
 							name: 'Timestamp of ' + measurement['parameter'],
-							//role: 'indicator.timestamp',
-							role: 'date',
-							type: 'number',
+							role: 'indicator.timestamp',
+							//role: 'date',
+							type: 'string',
 							read: true,
 							write: false
 						}
