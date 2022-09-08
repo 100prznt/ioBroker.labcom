@@ -4,6 +4,7 @@
 ### 0.1.4
 * Measurement values are converted explicit to number, OR and UR measurements get NaN as value and __new status state__ (Overrange, Underrange, OK)
 
+
 ### Description
 This adapter fetches your latest measurements from labcom.cloud
 
@@ -23,25 +24,23 @@ This adapter fetches your latest measurements from labcom.cloud
 * 0.1.3 Update LabCom Cloud endpoint URL
 * 0.1.4 Measurement are values converted explicit to number, OR and UR measurements get NaN as value and __new status state__ (Overrange, Underrange, OK)
 
+
+## Community
+Found this project on the [ioBroker Community](https://forum.iobroker.net/).
+* [Poollab / Primelab integrieren](https://forum.iobroker.net/topic/34360/poollab-primelab-integrieren)
+
+## Credits
+This app is made possible by contributions from:
+* [@LemonShock](https://github.com/LemonShock) - core contributor [LemonShock/ioBroker.labcom](https://github.com/LemonShock/ioBroker.labcom)
+* [Elias Rümmler](http://www.100prznt.de) ([@100prznt](https://github.com/100prznt))
+
+
 ## License
-MIT License
+The ioBroker.labcom Adapter is licensed under [MIT](http://www.opensource.org/licenses/mit-license.php "Read more about the MIT license form"). Refer to [LICENSE](https://github.com/100prznt/ioBroker.labcom/blob/master/LICENSE) for more information.
 
-Copyright (c) 2020 LemonShock <dev.lemonshock@gmail.com>
+## Contributions
+Contributions are welcome. Fork this repository and send a pull request if you have something useful to add.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+-----------
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Copyright (c) 2022 Elias Ruemmler <pool@100prznt.de>

@@ -47,9 +47,9 @@ const getData = async (endpoint, token, accountFilter) => {
 			common: {
 				name: 'Last change in measurement data synchronization',
 				role: 'indicator.timestamp',
-                                type: 'number',
-                                read: true,
-                                write: false
+				type: 'number',
+				read: true,
+				write: false
 			}
 		});
 		adapter.setState(`cloudaccount.lastchange`, lastchange, true);
@@ -138,13 +138,14 @@ const getData = async (endpoint, token, accountFilter) => {
 						common: {
 							name: measurement['parameter'],
 							role: 'value',
-							type: 'string',
-							value: measurementValue+' '+unit,
+							type: 'number',
+							value: measurementValue,
+							unit: unit,
 							read: true,
 							write: false
 						}
 					});
-					adapter.setState(`accounts.${forename}_${surname}.parameter.${parameter}.measurement`, measurementValue+' '+unit, true);
+					adapter.setState(`accounts.${forename}_${surname}.parameter.${parameter}.measurement`, measurementValue, true);
 
 					// set scenario
 					adapter.setObjectNotExists(`accounts.${forename}_${surname}.parameter.${parameter}.scenario`, {
@@ -208,12 +209,12 @@ const getData = async (endpoint, token, accountFilter) => {
 
 // is called when adapter shuts down
 adapter.on('unload', function (callback) {
-    try {
-        adapter.log.info('cleaned everything up...');
-        callback();
-    } catch (e) {
-        callback();
-    }
+	try {
+		adapter.log.info('cleaned everything up...');
+		callback();
+	} catch (e) {
+		callback();
+	}
 });
 
 // is called when adapter starts

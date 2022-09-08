@@ -3,8 +3,8 @@
   "version": "0.1.4",
   "description": "LabCom API",
   "author": {
-    "name": "LemonShock",
-    "email": "dev.lemonshock@gmail.com"
+    "name": "Elias Ruemmler",
+    "email": "pool@100prznt.de"
   },
   "license": "MIT",
   "keywords": [
@@ -17,11 +17,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/LemonShock/ioBroker.labcom"
+    "url": "https://github.com/100prznt/ioBroker.labcom"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^2.4.0",
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "@iobroker/testing": "^2.2.0",
@@ -52,7 +52,7 @@
     "lint": "eslint"
   },
   "bugs": {
-    "url": "https://github.com/LemonShock/ioBroker.labcom"
+    "url": "https://github.com/100prznt/ioBroker.labcom"
   },
   "readmeFilename": "README.md"
 }

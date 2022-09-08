@@ -28,14 +28,14 @@
                 if ($key.attr('type') === 'checkbox') {
                     // do not call onChange direct, because onChange could expect some arguments
                     $key.prop('checked', settings[id])
-                        .on('change', () => onChange())
-                        ;
+                    .on('change', () => onChange())
+                    ;
                 } else {
                     // do not call onChange direct, because onChange could expect some arguments
                     $key.val(settings[id])
-                        .on('change', () => onChange())
-                        .on('keyup', () => onChange())
-                        ;
+                    .on('change', () => onChange())
+                    .on('keyup', () => onChange())
+                    ;
                 }
             });
             onChange(false);
@@ -78,14 +78,14 @@
             </div>
 
         </div>
-	<div class="row">
-	    <div class="col s6 input-field">
-		<input type="text" class="value" id="labcomAccountIds" />
-		<label for="labcomAccountIds" class="translate">Accounts to monitor (Enter 0 for all accounts, else enter desired account IDs comma separated.)</label>
-	    </div>
-	</div>
+        <div class="row">
+           <div class="col s6 input-field">
+              <input type="text" class="value" id="labcomAccountIds" />
+              <label for="labcomAccountIds" class="translate">Accounts to monitor (Enter 0 for all accounts, else enter desired account IDs comma separated.)</label>
+          </div>
+      </div>
 
-    </div>
+  </div>
 </body>
 
 </html>
