@@ -47,7 +47,7 @@ const getData = async (endpoint, token, accountFilter) => {
 			common: {
 				name: 'Last change in measurement data synchronization',
 				role: 'indicator.timestamp',
-				type: 'number',
+				type: 'string',
 				read: true,
 				write: false
 			}
@@ -101,8 +101,27 @@ const getData = async (endpoint, token, accountFilter) => {
 				let userDate = new Date(measurement['timestamp'] * 1000).toLocaleString();
 				let parameter = measurement['parameter'] ? measurement['parameter'].replace(/-/g, '_').replace(/ /g,"_") : "Unknown";
 				let scenario = measurement['scenario'] ? measurement['scenario'].replace(/-/g, '_') : "Unknown";
-				let measurementValue = measurement['value'];
 				let unit = measurement['unit'];
+
+				//new implementation for measurementValue, set value to NaN if the received data do nor represent a numeric value
+				let	measurementValue = Number(measurement['value']); //return NaN if not a number
+				let measurementStatus = 'Unknown';
+				if (isNaN(measurementValue)) {
+					switch (measurement['value']) {
+						case 'OVERRANGE':
+							measurementStatus = 'Overrange';
+							break;
+						case 'UNDERRANGE':
+							measurementStatus = 'Underrange';
+							break;
+						default:
+							//measurementStatus = measurement['value'];
+							break;
+					}
+				} else {
+					measurementStatus = 'OK';
+				}
+
 				
 				if(!(parameter in addedParameter)){
 					adapter.setObjectNotExists(`accounts.${forename}_${surname}.parameter.${parameter}`, {
@@ -150,12 +169,29 @@ const getData = async (endpoint, token, accountFilter) => {
 						common: {
 							name: 'Timestamp of ' + measurement['parameter'],
 							role: 'indicator.timestamp',
-							type: 'number',
+							//role: 'date',
+							type: 'string',
 							read: true,
 							write: false
 						}
 					});
 					adapter.setState(`accounts.${forename}_${surname}.parameter.${parameter}.timestamp`, userDate, true);
+
+
+					// set status
+					adapter.setObjectNotExists(`accounts.${forename}_${surname}.parameter.${parameter}.status`, {
+						type: 'state',
+						common: {
+							name: 'Status of ' + measurement['parameter'],
+							role: 'info.status',
+							type: 'string',
+							value: measurementStatus,
+							read: true,
+							write: false
+						}
+					});
+					adapter.setState(`accounts.${forename}_${surname}.parameter.${parameter}.status`, measurementStatus, true);
+
 					
 					// add parameter to already imported parameter
 					addedParameter[parameter] = true;
@@ -163,7 +199,6 @@ const getData = async (endpoint, token, accountFilter) => {
 			});
 		});
 		adapter.log.info('LabCom adapter - fetching data completed');
-		adapter.log.info('LabCom adapter - shutting down until next scheduled call');
 		adapter.stop();
 	}  
 	catch (error) {
@@ -187,7 +222,7 @@ adapter.on('unload', function (callback) {
 adapter.on('ready', function () {
 	adapter.log.info('LabCom adapter - started');
 	
-	const endpoint = "https://backend.labcom.cloud/graphql";
+	const endpoint = "https://backend.labcom.cloud/graphql"; //new url since 2022/09/02
 	const token = adapter.config.labcomApiToken;
 	const accountIds = adapter.config.labcomAccountIds;
 	
@@ -196,7 +231,7 @@ adapter.on('ready', function () {
 		accountFilter = `(id:[${accountIds}])`;
 	}
 	
-	adapter.log.info('LabCom adapter - fetching data ...');
+	adapter.log.debug('LabCom adapter - fetching data started');
 	if(token && accountIds){
 		getData(endpoint, token, accountFilter);
 	} else {
