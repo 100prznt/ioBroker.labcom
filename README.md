@@ -1,8 +1,8 @@
 ![Logo](admin/logo.png)
 # ioBroker.labcom
 
-### 0.0.3
-* (LemonShock) added translations, restructured data points
+### 0.1.4
+* Measurement values are converted explicit to number, OR and UR measurements get NaN as value and __new status state__ (Overrange, Underrange, OK)
 
 ### Description
 This adapter fetches your latest measurements from labcom.cloud
@@ -10,14 +10,18 @@ This adapter fetches your latest measurements from labcom.cloud
 ### Usage
 * Install this adapter to ioBroker
 * Create an instance of this adapter
-* Enter your LabCom API token, which can be created on https://labcom.cloud/settings
+* Enter your LabCom API token, which can be created on https://labcom.cloud/pages/user-setting
 * Define which accounts should be monitored in ioBroker (either enter "0" for all accounts, or enter the desired account IDs comma separated)
 * The adapter is preconfigured to fetch the latest data every minute, this can be changed in the instance overview
 
 ## Changelog
-* 0.0.1 Inital release
-* 0.0.2 incomplete config patch
-* 0.0.3 added translations, restructured data points
+* 0.0.1 Inital release (LemonShock)
+* 0.0.2 Incomplete config patch (LemonShock)
+* 0.0.3 Added translations, restructured data points (LemonShock)
+* 0.1.1 Forked from 0.0.1 (LemonShock), change of the state datatype to __number__
+* 0.1.2 Update libraries and io-package.json
+* 0.1.3 Update LabCom Cloud endpoint URL
+* 0.1.4 Measurement are values converted explicit to number, OR and UR measurements get NaN as value and __new status state__ (Overrange, Underrange, OK)
 
 ## License
 MIT License
