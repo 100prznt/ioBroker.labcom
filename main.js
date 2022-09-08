@@ -231,7 +231,7 @@ adapter.on('ready', function () {
 		accountFilter = `(id:[${accountIds}])`;
 	}
 	
-	adapter.log.info('LabCom adapter - fetching data ...');
+	adapter.log.debug('LabCom adapter - fetching data started');
 	if(token && accountIds){
 		getData(endpoint, token, accountFilter);
 	} else {
