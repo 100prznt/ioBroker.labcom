@@ -110,14 +110,15 @@ const getData = async (endpoint, token, accountFilter) => {
 				let measurementStatus = 'Unknown';
 				if (isNaN(measurementValue)) {
 					switch (measurement['value']) {
-						case 'OR':
+						case 'OVERRANGE':
 							measurementStatus = 'Overrange';
 							break;
-						case 'UR':
+						case 'UNDERRANGE':
 							measurementStatus = 'Underrange';
 							break;
 						default:
-							measurementStatus = measurement['value'];
+							//measurementStatus = measurement['value'];
+							break;
 					}
 				} else {
 					measurementStatus = 'OK';
