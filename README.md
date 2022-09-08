@@ -1,4 +1,5 @@
-![Logo](admin/logo.png)
+<img src="admin/logo.png" alt="IO-Link Logo" width="80" height="80" />
+
 # ioBroker.labcom
 
 ### 0.1.4
@@ -9,7 +10,7 @@
 This adapter fetches your latest measurements from labcom.cloud
 
 ### Usage
-* Install this adapter to ioBroker
+* Install this adapter to ioBroker (Expert mode -> install from url)
 * Create an instance of this adapter
 * Enter your LabCom API token, which can be created on https://labcom.cloud/pages/user-setting
 * Define which accounts should be monitored in ioBroker (either enter "0" for all accounts, or enter the desired account IDs comma separated)
