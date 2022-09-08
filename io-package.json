@@ -17,18 +17,41 @@
 			},
 			"0.1.3": {
 				"en": "Update LabCom Cloud endpoint url",
-				"de": "Aktualisierung der LabCom Cloud URL"
+				"de": "Aktualisierung der LabCom Cloud URL",
+				"ru": "Обновить LabCom Облако endpoint url",
+				"pt": "Atualizar LabCom Nuvem de ponta url",
+				"nl": "Update LabCom Cloud endpoint url",
+				"fr": "Update LabCom Point d ' extrémité du nuage",
+				"it": "Aggiornamento LabCom Url di endpoint cloud",
+				"es": "Update LabCom Nube punto final url",
+				"pl": "Update LabCom końcowy punkt obłoku",
+				"zh-cn": "最新资料 Cloud Endpointurl"
 			},
 			"0.1.2": {
 				"en": "Update libraries and io-package.json",
-				"de": "Update von Bibliotheken und der io-package.json"
+				"de": "Update von Bibliotheken und der io-package.json",
+				"ru": "Обновление библиотек и io-package. Джсон",
+				"pt": "Atualizar bibliotecas e io-package. O que foi",
+				"nl": "Update bibliotheken en io-package. Json",
+				"fr": "Mettre à jour les bibliothèques et io-package. json",
+				"it": "Aggiorna librerie e io-package. J",
+				"es": "Actualizar bibliotecas y io-package. json",
+				"pl": "Biblioteki i io-package. json",
+				"zh-cn": "最新图书馆和碘剂。 json"
 			},
 			"0.1.1": {
-				"en": "initial release, forked from LemonShock, measurement values stored as number",
-				"de": "Erstveröffentlichung, forked von LemonShock, Messwerte werden als Zahl abgelegt"
+				"en": "Initial release, forked from LemonShock, measurement values stored as number",
+				"de": "Erstveröffentlichung, forked von LemonShock, Messwerte werden als Zahl abgelegt",
+				"ru": "Первоначальный выпуск, вилированный от LemonShock, значения измерения, хранящиеся как номер",
+				"pt": "Lançamento inicial, forcado de LemonShock, valores de medição armazenados como número",
+				"nl": "Initiële vrijlating, gevorkt van LemonShock, maatwaarden opgeslagen als nummer",
+				"fr": "Sortie initiale, fournée de LemonShock, valeurs de mesure stockées comme nombre",
+				"it": "Rilascio iniziale, predetto da LemonShock, valori di misura memorizzati come numero",
+				"es": "Versión inicial, preseleccionada desde LemonShock, valores de medición almacenados como número",
+				"pl": "Wstępne wydanie, wyprzedzone z LemonShock, wartości pomiarowe przechowywane jako numer",
+				"zh-cn": "从LemonShock引出的最初释放,作为数量的测量价值储存的计量数值"
 			}
 		},
-		"title": "LabCom API",
 		"titleLang": {
 			"en": "LabCom API",
 			"de": "LabCom API",
