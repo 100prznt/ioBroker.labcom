@@ -1,4 +1,4 @@
-<img src="admin/logo.png" alt="IO-Link Logo" width="80" height="80" />
+<img src="admin/logo.png" alt="LabCom Logo" width="150" height="150" />
 
 # ioBroker.labcom
 
