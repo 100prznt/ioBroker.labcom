@@ -47,7 +47,7 @@ const getData = async (endpoint, token, accountFilter) => {
 			common: {
 				name: 'Last change in measurement data synchronization',
 				role: 'indicator.timestamp',
-				type: 'number',
+				type: 'string',
 				read: true,
 				write: false
 			}
@@ -98,13 +98,11 @@ const getData = async (endpoint, token, accountFilter) => {
 			});
 			
 			measurements.forEach(measurement => { 
-				let userDate = new Date(measurement['timestamp'] * 1000).toLocaleString(); //ER 2022/09/08
+				let userDate = new Date(measurement['timestamp'] * 1000).toLocaleString();
 				let parameter = measurement['parameter'] ? measurement['parameter'].replace(/-/g, '_').replace(/ /g,"_") : "Unknown";
 				let scenario = measurement['scenario'] ? measurement['scenario'].replace(/-/g, '_') : "Unknown";
-				//let measurementValue = measurement['value']; //ER 2022/09/08
 				let unit = measurement['unit'];
 
-				//ER 2022/09/08
 				//new implementation for measurementValue, set value to NaN if the received data do nor represent a numeric value
 				let	measurementValue = Number(measurement['value']); //return NaN if not a number
 				let measurementStatus = 'Unknown';
