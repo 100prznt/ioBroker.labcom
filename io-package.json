@@ -1,25 +1,80 @@
 {
 	"common": {
 		"name": "labcom",
-		"version": "0.1.2",
+		"version": "0.1.4",
 		"news": {
+			"0.1.4": {
+				"en": "Measurement values are converted explicit to number, OR and UR measurements get NaN as value and new status state (Overrange, Underrange, OK)",
+				"de": "Messwerte werden explizit als number geparst, OR und UR Messungen erhalten NaN als Wert, neuer Status State ergänzt (Overrange, Underrange, OK)",
+				"ru": "Значения измерения преобразовываются явным к номеру, OR и UR измерения получают NaN как значение и новое состояние состояния (Overrange, Underrange, OK)",
+				"pt": "Valores de medição são convertidos explícitos para número, OR e UR medições obter NaN como valor e novo estado de status (Overrange, Underrange, OK)",
+				"nl": "Geheugenwaarden worden omgebouwd tot nummer, of onze maatregelen krijgen Nan als waarde en nieuwe staat, Underrange, OK",
+				"fr": "Les valeurs de mesure sont converties explicitement en nombre, les mesures OR et UR obtiennent NaN comme valeur et nouvel état de statut (Overrange, Underrange, OK)",
+				"it": "I valori di misura vengono convertiti esplicitamente in numero, le misurazioni OR e UR ottengono NaN come valore e nuovo stato di stato (Overrange, Underrange, OK)",
+				"es": "Los valores de medición se convierten explícitamente en número, las mediciones OR y UR obtienen NaN como valor y estado nuevo (Overrange, Underrange, OK)",
+				"pl": "Wartości pomiarów są przerobione na liczbę, OR i UR otrzymują NaN jako wartość i nowy stan (Overrange, Underrange, OK)",
+				"zh-cn": "衡量数值被明确兑换为数、其他资源和欧元的衡量,将纳尼作为价值和新地位的国家(安排、安排、 OK)。"
+			},
+			"0.1.3": {
+				"en": "Update LabCom Cloud endpoint url",
+				"de": "Aktualisierung der LabCom Cloud URL",
+				"ru": "Обновить LabCom Облако endpoint url",
+				"pt": "Atualizar LabCom Nuvem de ponta url",
+				"nl": "Update LabCom Cloud endpoint url",
+				"fr": "Update LabCom Point d ' extrémité du nuage",
+				"it": "Aggiornamento LabCom Url di endpoint cloud",
+				"es": "Update LabCom Nube punto final url",
+				"pl": "Update LabCom końcowy punkt obłoku",
+				"zh-cn": "最新资料 Cloud Endpointurl"
+			},
 			"0.1.2": {
 				"en": "Update libraries and io-package.json",
-				"de": "Update von Bibliotheken und der io-package.json"
+				"de": "Update von Bibliotheken und der io-package.json",
+				"ru": "Обновление библиотек и io-package. Джсон",
+				"pt": "Atualizar bibliotecas e io-package. O que foi",
+				"nl": "Update bibliotheken en io-package. Json",
+				"fr": "Mettre à jour les bibliothèques et io-package. json",
+				"it": "Aggiorna librerie e io-package. J",
+				"es": "Actualizar bibliotecas y io-package. json",
+				"pl": "Biblioteki i io-package. json",
+				"zh-cn": "最新图书馆和碘剂。 json"
 			},
 			"0.1.1": {
-				"en": "initial release, forked from LemonShock, measurement values stored as number",
-				"de": "Erstveröffentlichung, forked von LemonShock, Messwerte werden als Zahl abgelegt"
+				"en": "Initial release, forked from LemonShock, measurement values stored as number",
+				"de": "Erstveröffentlichung, forked von LemonShock, Messwerte werden als Zahl abgelegt",
+				"ru": "Первоначальный выпуск, вилированный от LemonShock, значения измерения, хранящиеся как номер",
+				"pt": "Lançamento inicial, forcado de LemonShock, valores de medição armazenados como número",
+				"nl": "Initiële vrijlating, gevorkt van LemonShock, maatwaarden opgeslagen als nummer",
+				"fr": "Sortie initiale, fournée de LemonShock, valeurs de mesure stockées comme nombre",
+				"it": "Rilascio iniziale, predetto da LemonShock, valori di misura memorizzati come numero",
+				"es": "Versión inicial, preseleccionada desde LemonShock, valores de medición almacenados como número",
+				"pl": "Wstępne wydanie, wyprzedzone z LemonShock, wartości pomiarowe przechowywane jako numer",
+				"zh-cn": "从LemonShock引出的最初释放,作为数量的测量价值储存的计量数值"
 			}
 		},
-		"title": "LabCom API",
 		"titleLang": {
 			"en": "LabCom API",
-			"de": "LabCom API"
+			"de": "LabCom API",
+			"ru": "LabCom API",
+			"pt": "API do LabCom",
+			"nl": "LabCom API",
+			"fr": "API LabCom",
+			"it": "API di LabCom",
+			"es": "LabCom API",
+			"pl": "LabCom API",
+			"zh-cn": "LabCom API"
 		},
 		"desc": {
-			"en": "Fetches your latest measurements from labcom.cloud",
-			"de": "Ruft Ihre neuesten Messungen von labcom.cloud ab"
+			"en": "Fetches your latest measurements from the LabCom Cloud",
+			"de": "Ruft die neuesten Messungen aus der LabCom Cloud ab",
+			"ru": "Определяет ваши последние измерения от LabCom Cloud",
+			"pt": "Fetches suas últimas medidas do LabCom Cloud",
+			"nl": "Je laatste maatregelen van de LabCom Cloud",
+			"fr": "Vos dernières mesures du LabCom Cloud",
+			"it": "Affina le tue ultime misure dal LabCom Cloud",
+			"es": "Muestra tus últimas medidas desde LabCom Cloud",
+			"pl": "Ostatnie pomiary z chmury LabCom",
+			"zh-cn": "你们的最新衡量方法"
 		},
 		"authors": [
 			"LemonShock <dev.lemonshock@gmail.com>",
