@@ -29,8 +29,8 @@ This adapter fetches your latest measurements from labcom.cloud
 
 
 ## Community
-Found this project on the [ioBroker Community](https://forum.iobroker.net/).
-* [Poollab / Primelab integrieren](https://forum.iobroker.net/topic/34360/poollab-primelab-integrieren)
+* [ioBroker Community - Poollab / Primelab integrieren](https://forum.iobroker.net/topic/34360/poollab-primelab-integrieren)
+* [Poolpowershop-Forum - ioBroker Adapter für das PoolLAB](https://www.poolpowershop-forum.de/forum/thread/1159304-iobroker-adapter-für-das-poollab/)
 
 ## Credits
 This app is made possible by contributions from:
