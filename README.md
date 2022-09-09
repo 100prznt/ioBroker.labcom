@@ -36,6 +36,7 @@ Found this project on the [ioBroker Community](https://forum.iobroker.net/).
 This app is made possible by contributions from:
 * [@LemonShock](https://github.com/LemonShock) - core contributor [LemonShock/ioBroker.labcom](https://github.com/LemonShock/ioBroker.labcom)
 * [Elias Rümmler](http://www.100prznt.de) ([@100prznt](https://github.com/100prznt))
+* [@Tw1nh3ad](https://github.com/Tw1nh34d)
 
 
 ## License
