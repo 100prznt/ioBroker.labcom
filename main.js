@@ -221,7 +221,7 @@ adapter.on('unload', function (callback) {
 // is called when adapter starts
 adapter.on('ready', function () {
 	adapter.log.info('LabCom adapter - started');
-	
+
 	const endpoint = "https://backend.labcom.cloud/graphql"; //new url since 2022/09/02
 	const token = adapter.config.labcomApiToken;
 	const accountIds = adapter.config.labcomAccountIds;
