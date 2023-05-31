@@ -1,3 +1,9 @@
+```diff
+! Support for PoolLAB 2.0 will follow.
+```
+
+---
+
 <img src="admin/logo.png" alt="LabCom Logo" width="150" height="150" />
 
 # ioBroker.labcom
