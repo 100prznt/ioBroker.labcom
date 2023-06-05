@@ -16,7 +16,7 @@ const axios = require('axios');
 // function for fetching data
 const getData = async (endpoint, token, accountFilter) => {
 	try {
-		let query = `{ "query": "{ CloudAccount { email last_change_time Accounts ${accountFilter} { forename surname Measurements {  value unit timestamp parameter scenario } } } }" }`;
+		let query = `{ "query": "{ CloudAccount { email last_change_time Accounts ${accountFilter} { id forename surname Measurements {  value unit timestamp parameter scenario } } } }" }`;
 
 		adapter.log.debug('endpoint: ' + endpoint);
 		adapter.log.debug('query: ' + query);
@@ -26,7 +26,7 @@ const getData = async (endpoint, token, accountFilter) => {
 		var res = await axios({
 			method: 'post',
 			url: endpoint,
-			data: `{ "query": "{ CloudAccount { email last_change_time Accounts ${accountFilter} { forename surname Measurements {  value unit timestamp parameter scenario } } } }" }`,
+			data: `{ "query": "{ CloudAccount { email last_change_time Accounts ${accountFilter} { id forename surname Measurements {  value unit timestamp parameter scenario } } } }" }`,
 			headers: {
 				Authorization: token,
 				"Content-Type": "application/json"
@@ -91,6 +91,18 @@ const getData = async (endpoint, token, accountFilter) => {
 			});
 			adapter.setState(`accounts.${forename}_${surname}`, account['forename'] + ' ' + account['surname'], true);
 			
+			adapter.setObjectNotExists(`accounts.${forename}_${surname}.id`, {
+				type: 'state',
+				common: {
+					name: 'Id',
+					read: true,
+					write: false,
+					value: account['id']
+				}
+			});
+			adapter.setState(`accounts.${forename}_${surname}.id`, account['id'], true);
+
+
 			// pre-sort by measurement date-time desc
 			var measurements = account['Measurements'];
 
