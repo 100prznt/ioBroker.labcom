@@ -1,8 +1,12 @@
 {
 	"common": {
 		"name": "labcom",
-		"version": "0.1.4",
+		"version": "0.1.5",
 		"news": {
+			"0.1.5": {
+				"en": "Add account ID as state",
+				"de": "Anzeige der Account ID (Messquelle) als State"
+			},
 			"0.1.4": {
 				"en": "Measurement values are converted explicit to number, OR and UR measurements get NaN as value and new status state (Overrange, Underrange, OK)",
 				"de": "Messwerte werden explizit als number geparst, OR und UR Messungen erhalten NaN als Wert, neuer Status State ergänzt (Overrange, Underrange, OK)",
