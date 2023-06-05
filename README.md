@@ -1,13 +1,11 @@
-```diff
-! Support for PoolLAB 2.0 will follow.
-```
-
 <img src="admin/logo.png" alt="LabCom Logo" width="150" height="150" />
 
 # ioBroker.labcom
 
-### 0.1.4
-* Measurement values are converted explicit to number, OR and UR measurements get NaN as value and __new status state__ (Overrange, Underrange, OK)
+### 0.1.5
+* Add account ID as state
+
+#### Works fine with PoolLAB 2.0
 
 
 ## Description
