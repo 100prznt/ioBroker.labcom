@@ -28,6 +28,7 @@ This adapter fetches your latest measurements from labcom.cloud
 * 0.1.2 Update libraries and io-package.json
 * 0.1.3 Update LabCom Cloud endpoint URL
 * 0.1.4 Measurement are values converted explicit to number, OR and UR measurements get NaN as value and __new status state__ (Overrange, Underrange, OK)
+* 0.1.5 Add account ID as state
 
 
 ## Community
@@ -49,4 +50,4 @@ Contributions are welcome. Fork this repository and send a pull request if you h
 
 -----------
 
-Copyright &copy; 2022 Elias Ruemmler <pool@100prznt.de>
+Copyright &copy; 2023 Elias Ruemmler <pool@100prznt.de>
