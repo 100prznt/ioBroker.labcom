@@ -16,6 +16,15 @@ const axios = require('axios');
 // function for fetching data
 const getData = async (endpoint, token, accountFilter) => {
 	try {
+		let query = `{ "query": "{ CloudAccount { email last_change_time Accounts ${accountFilter} { forename surname Measurements {  value unit timestamp parameter scenario } } } }" }`;
+
+		adapter.log.debug('endpoint: ' + endpoint);
+		adapter.log.debug('query: ' + query);
+		adapter.log.debug('token: ' + token);
+
+		adapter.log.debug('send request ...');
+
+
 		var res = await axios({
 			method: 'post',
 			url: endpoint,
@@ -25,6 +34,8 @@ const getData = async (endpoint, token, accountFilter) => {
 				"Content-Type": "application/json"
 			}
 		});
+
+		adapter.log.debug('response: ' + res);
 
 		let cloudEmail = res.data['data']['CloudAccount']['email'];
 		let lastchange = new Date(res.data['data']['CloudAccount']['last_change_time'] * 1000).toLocaleString();
