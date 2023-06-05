@@ -21,9 +21,7 @@ const getData = async (endpoint, token, accountFilter) => {
 		adapter.log.debug('endpoint: ' + endpoint);
 		adapter.log.debug('query: ' + query);
 		adapter.log.debug('token: ' + token);
-
 		adapter.log.debug('send request ...');
-
 
 		var res = await axios({
 			method: 'post',
