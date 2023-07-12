@@ -1,6 +1,6 @@
 {
   "name": "iobroker.labcom",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "LabCom API",
   "author": {
     "name": "Elias Ruemmler",

@@ -2,11 +2,11 @@
 
 # ioBroker.labcom
 
-### 0.1.5
-* Add account ID as state
+### 0.1.6
+* Bugfix - add common.type for account ID to prevent warnings in logs
 
-#### Works fine with PoolLAB 2.0
-
+#### This adapter works fine with PoolLab 2.0
+Generell werden alle in der LabCom Cloud gespeicherten Messdaten verarbeitet, auch sollche welche mit dem PrimeLab 1.0/2.0 oder PoolLab 1.0 erfasst wurden.
 
 ## Description
 This adapter fetches your latest measurements from labcom.cloud
