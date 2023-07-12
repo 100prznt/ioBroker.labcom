@@ -95,6 +95,7 @@ const getData = async (endpoint, token, accountFilter) => {
 				type: 'state',
 				common: {
 					name: 'Id',
+					type: 'number',
 					read: true,
 					write: false,
 					value: account['id']
