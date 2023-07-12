@@ -5,8 +5,8 @@
 ### 0.1.6
 * Bugfix - add common.type for account ID to prevent warnings in logs
 
-#### This adapter works fine with PoolLab 2.0
-Generell werden alle in der LabCom Cloud gespeicherten Messdaten verarbeitet, auch sollche welche mit dem PrimeLab 1.0/2.0 oder PoolLab 1.0 erfasst wurden.
+## :heavy_check_mark: This adapter works fine with PoolLab 2.0
+All measurement data stored in the LabCom Cloud are processed, including those acquired with PrimeLab 1.0/2.0 or PoolLab 1.0.
 
 ## Description
 This adapter fetches your latest measurements from labcom.cloud
