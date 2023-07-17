@@ -105,7 +105,7 @@
 			"labcom"
 		],
 		"mode": "schedule",
-		"schedule": "*/1 * * * *",
+		"schedule": "*/5 * * * *",
 		"type": "misc-data",
 		"compact": true,
 		"materialize": true,
